@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemlerimiz | KZ Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-system">
+        <div class="glow-horizontal"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-area">
+                    <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                    <span class="brand-name">KZ Systems</span>
+                </div>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                    <li><a href="systems.html" class="active" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                    <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                    <li><a href="index.html#about" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <a href="#contact-info" class="btn-contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+                    <div class="lang-switcher">
+                        <button id="lang-btn">TR</button>
+                        <div class="lang-dropdown">
+                            <a href="#" onclick="changeLang('tr')">Türkçe</a>
+                            <a href="#" onclick="changeLang('en')">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="systems-showcase">
+        <div class="container">
+            <div class="badge-wrapper fade-in visible">
+                <div class="line"></div>
+                <div class="badge" data-tr="Aktif Çözümlerimiz" data-en="Our Active Solutions">Aktif Çözümlerimiz</div>
+                <div class="line"></div>
+            </div>
+            <h1 class="section-title fade-in visible" data-tr="Sistemlerimiz" data-en="Our Systems" style="margin-bottom: 5rem;">Sistemlerimiz</h1>
+
+            <div class="systems-list">
+                <!-- 1. Oto Kiralama KG CRM -->
+                <div class="long-system-card fade-in visible">
+                    <div class="long-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C2.1 11.6 2 12.2 2 12.8V16c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <div class="long-card-content">
+                        <h2 data-tr="Oto Kiralama KG CRM" data-en="Car Rental KG CRM">Oto Kiralama KG CRM</h2>
+                        <p data-tr="Reklamdan gelen müşterileriniz ile sisteme girdiğiniz bilgiler doğrultusunda konuşan yapay zeka sistemi." data-en="An AI system that communicates with your customers from ads based on the information you provide.">Reklamdan gelen müşterileriniz ile sisteme girdiğiniz bilgiler doğrultusunda konuşan yapay zeka sistemi.</p>
+                    </div>
+                    <a href="oto-kiralama.html" class="plus-btn">
+                        <span class="plus-icon">+</span>
+                        <span class="btn-text" data-tr="Daha fazla bilgi" data-en="More info">Daha fazla bilgi</span>
+                    </a>
+                </div>
+
+                <!-- 2. Oto Satış KG CRM -->
+                <div class="long-system-card fade-in visible" style="animation-delay: 0.1s;">
+                    <div class="long-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-1.39-1.74a2 2 0 0 0-1.56-.73H15"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+                    </div>
+                    <div class="long-card-content">
+                        <h2 data-tr="Oto Satış KG CRM" data-en="Car Sales KG CRM">Oto Satış KG CRM</h2>
+                        <p data-tr="Reklamdan gelen müşterileriniz ile sisteme girdiğiniz bilgiler doğrultusunda konuşan yapay zeka sistemi." data-en="An AI system that communicates with your customers from ads based on the information you provide.">Reklamdan gelen müşterileriniz ile sisteme girdiğiniz bilgiler doğrultusunda konuşan yapay zeka sistemi.</p>
+                    </div>
+                    <a href="oto-satis.html" class="plus-btn">
+                        <span class="plus-icon">+</span>
+                        <span class="btn-text" data-tr="Daha fazla bilgi" data-en="More info">Daha fazla bilgi</span>
+                    </a>
+                </div>
+
+                <!-- 3. Finansal Asistan -->
+                <div class="long-system-card fade-in visible" style="animation-delay: 0.2s;">
+                    <div class="long-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="long-card-content">
+                        <h2 data-tr="Finansal Asistan" data-en="Financial Assistant">Finansal Asistan</h2>
+                        <p data-tr="Sadece bir mesaj ile sürekli finansal yönetiminizi yapan bir asistan; sistem üzerinden aylık harcamalarınızı ve gelirlerinizi yönetebilmenizi sağlar." data-en="An assistant that manages your finances with just a message; allows you to manage monthly expenses and incomes through the system.">Sadece bir mesaj ile sürekli finansal yönetiminizi yapan bir asistan; sistem üzerinden aylık harcamalarınızı ve gelirlerinizi yönetebilmenizi sağlar.</p>
+                    </div>
+                    <a href="finansal-asistan.html" class="plus-btn">
+                        <span class="plus-icon">+</span>
+                        <span class="btn-text" data-tr="Daha fazla bilgi" data-en="More info">Daha fazla bilgi</span>
+                    </a>
+                </div>
+
+                <!-- 4. Sanal Kabin -->
+                <div class="long-system-card fade-in visible" style="animation-delay: 0.3s;">
+                    <div class="long-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                    </div>
+                    <div class="long-card-content">
+                        <h2 data-tr="Sanal Kabin" data-en="Virtual Fitting Room">Sanal Kabin</h2>
+                        <p data-tr="Kullanıcıların kıyafetleri dijital deneme kabininde test etmelerine ve üzerlerinde nasıl durduğunu görebilmelerine olanak tanıyan bir sistem." data-en="A system that allows users to test clothes in a digital fitting room and see how they look on them.">Kullanıcıların kıyafetleri dijital deneme kabininde test etmelerine ve üzerlerinde nasıl durduğunu görebilmelerine olanak tanıyan bir sistem.</p>
+                    </div>
+                    <a href="sanal-kabin.html" class="plus-btn">
+                        <span class="plus-icon">+</span>
+                        <span class="btn-text" data-tr="Daha fazla bilgi" data-en="More info">Daha fazla bilgi</span>
+                    </a>
+                </div>
+
+                <!-- 5. KG Doktor Randevu Gecikme Asistanı -->
+                <div class="long-system-card fade-in visible" style="animation-delay: 0.4s;">
+                    <div class="long-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><path d="M19 14c1.49 0 2.87.47 4 1.26V8c0-1.1-.9-2-2-2h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h7.26c-.79-1.13-1.26-2.51-1.26-4 0-3.87 3.13-7 7-7zM9 4h6v2H9V4zm1 9h4v2h-4v-2zm-6-5h16v4H4V8z"/><path d="M22 19h-2v-2a1 1 0 0 0-2 0v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2z"/></svg>
+                    </div>
+                    <div class="long-card-content">
+                        <h2 data-tr="KG Doktor Randevu Gecikme Asistanı" data-en="KG Doctor Appointment Delay Assistant">KG Doktor Randevu Gecikme Asistanı</h2>
+                        <p data-tr="Hastaneler ve klinikler için randevu trafiğini; doktor takvimi ve hasta bilgilerine göre, gecikme durumunda tek tuşla hastalara mesaj gönderen sistem." data-en="A system that sends messages to patients with a single click in case of delays, based on doctor calendars and patient information for hospitals and clinics.">Hastaneler ve klinikler için randevu trafiğini; doktor takvimi ve hasta bilgilerine göre, gecikme durumunda tek tuşla hastalara mesaj gönderen sistem.</p>
+                    </div>
+                    <a href="kg-doktor-randevu-gecikme-asistani.html" class="plus-btn">
+                        <span class="plus-icon">+</span>
+                        <span class="btn-text" data-tr="Daha fazla bilgi" data-en="More info">Daha fazla bilgi</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- New Bottom Section -->
+            <div class="analysis-box fade-in visible" style="margin-top: 8rem; text-align: center;">
+                <h2 data-tr="İşletmeniz için en uygun ücretsiz sistem analizi" data-en="The most suitable free system analysis for your business">İşletmeniz için en uygun ücretsiz sistem analizi</h2>
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/905411869513" target="_blank" class="btn-primary-v2" data-tr="Bizimle iletişime geçin" data-en="Contact us">Bizimle iletişime geçin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact-info" class="footer-detailed">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-area">
+                        <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                        <span class="brand-name">KZ Systems</span>
+                    </div>
+                    <p class="brand-desc" data-tr="İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz." data-en="Connecting businesses with the autonomous technology of the future.">İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-tr="İletişim Bilgileri" data-en="Contact Information">İletişim Bilgileri</h4>
+                    <ul>
+                        <li><span class="icon">📞</span> <span data-tr="Telefon: 0541 186 95 13" data-en="Phone: +90 541 186 95 13">Telefon: 0541 186 95 13</span></li>
+                        <li><span class="icon">✉️</span> <span data-tr="E-posta: kagulle31@gmail.com" data-en="Email: kagulle31@gmail.com">E-posta: kagulle31@gmail.com</span></li>
+                        <li><span class="icon">📱</span> <a href="https://wa.me/905411869513" target="_blank" data-tr="WhatsApp Destek Hattı" data-en="WhatsApp Support Line">WhatsApp Destek Hattı</a></li>
+                        <li><span class="icon">📍</span> <span data-tr="Adres: Kocaeli / Darıca" data-en="Address: Kocaeli / Darıca">Adres: Kocaeli / Darıca</span></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-tr="Hızlı Linkler" data-en="Quick Links">Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                        <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                        <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                        <li><a href="index.html#about" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-tr="© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle." data-en="© 2026 KZ Systems. All Rights Reserved. | With the assurance of transparent, invoiced and legal commercial infrastructure.">© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

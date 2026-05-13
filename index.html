@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KZ Systems | Uçtan Uca Otonom Sistemler</title>
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="KZ Systems - İşletmenize özel otonom sistemler, yapay zeka otomasyonları ve yazılım mimarileri.">
+</head>
+<body>
+    <!-- Background Glow System -->
+    <div class="bg-system">
+        <div class="glow-horizontal"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-area">
+                    <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                    <span class="brand-name">KZ Systems</span>
+                </div>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                    <li><a href="systems.html" target="_blank" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                    <li><a href="#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <a href="#contact-info" class="btn-contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+                    <div class="lang-switcher">
+                        <button id="lang-btn">TR</button>
+                        <div class="lang-dropdown">
+                            <a href="#" onclick="changeLang('tr')">Türkçe</a>
+                            <a href="#" onclick="changeLang('en')">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero-saas">
+        <div class="container">
+            <div class="badge-wrapper fade-in">
+                <div class="line"></div>
+                <div class="badge" data-tr="Geleceğin Otonom Teknolojisi" data-en="Autonomous Technology of the Future">Geleceğin Otonom Teknolojisi</div>
+                <div class="line"></div>
+            </div>
+            <h1 class="fade-in" data-tr="İşletmeniz İçin Uçtan Uca<br><span class='gradient-text'>Otonom Sistemler ve Yazılım Mimarileri.</span>" data-en="End-to-End Autonomous Systems<br><span class='gradient-text'>and Software Architectures for Your Business.</span>">İşletmeniz İçin Uçtan Uca<br><span class="gradient-text">Otonom Sistemler ve Yazılım Mimarileri.</span></h1>
+            <p class="fade-in" data-tr="Operasyonlarınızı hızlandıran, manuel iş yükünü ortadan kaldıran yapay zeka destekli otomasyonlar ve işletmenize özel çapraz platform yazılımlar inşa ediyoruz." data-en="We build AI-powered automations that accelerate your operations, eliminate manual workload, and develop cross-platform software tailored to your business.">Operasyonlarınızı hızlandıran, manuel iş yükünü ortadan kaldıran yapay zeka destekli otomasyonlar ve işletmenize özel çapraz platform yazılımlar inşa ediyoruz.</p>
+            <div class="hero-btns fade-in">
+                <a href="systems.html" class="btn-primary-v2" data-tr="Sistemlerimizi İnceleyin" data-en="Explore Our Systems">Sistemlerimizi İnceleyin</a>
+                <a href="https://wa.me/905411869513" target="_blank" class="btn-secondary-v2" data-tr="Hemen Teklif Al" data-en="Get Quote Now">Hemen Teklif Al</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Neden Biz? (Value Proposition) -->
+    <section class="value-prop">
+        <div class="container">
+            <div class="value-grid">
+                <!-- Card 1 -->
+                <div class="value-card fade-in">
+                    <div class="value-icon">⚡</div>
+                    <h3 data-tr="14 Günde Anahtar Teslim" data-en="14-Day Turnkey Delivery">14 Günde Anahtar Teslim</h3>
+                    <p data-tr="Projelerinizi aylarca sürüncemede bırakmıyoruz. İhtiyaç analizinizi yapıyor ve özel sisteminizi tam 14 gün içinde çalışır halde entegre ediyoruz." data-en="We don't keep your projects in limbo for months. We analyze your needs and integrate your custom system fully operational within exactly 14 days.">Projelerinizi aylarca sürüncemede bırakmıyoruz. İhtiyaç analizinizi yapıyor ve özel sisteminizi tam 14 gün içinde çalışır halde entegre ediyoruz.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="value-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="value-icon">💳</div>
+                    <h3 data-tr="Tek Seferlik Net Ücretlendirme" data-en="One-Time Fixed Pricing">Tek Seferlik Net Ücretlendirme</h3>
+                    <p data-tr="Gizli abonelik ücretleri yok. Sisteminizi tek seferlik ödeme ile kuruyoruz. Kurulum sonrası sadece standart sunucu masrafları size aittir." data-en="No hidden subscription fees. We set up your system with a one-time payment. After installation, only standard server costs belong to you.">Gizli abonelik ücretleri yok. Sisteminizi tek seferlik ödeme ile kuruyoruz. Kurulum sonrası sadece standart sunucu masrafları size aittir.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="value-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="value-icon">🛠️</div>
+                    <h3 data-tr="Güvenilir Teknik Destek" data-en="Reliable Technical Support">Güvenilir Teknik Destek</h3>
+                    <p data-tr="Sistem teslimatından sonra işimiz bitmiyor. Olası bir teknik aksaklık veya altyapısal bir sorunda anında müdahale ediyor, arkanızda duruyoruz." data-en="Our job doesn't end after delivery. In case of any technical hitch or infrastructure issue, we intervene immediately and stand by you.">Sistem teslimatından sonra işimiz bitmiyor. Olası bir teknik aksaklık veya altyapısal bir sorunda anında müdahale ediyor, arkanızda duruyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Geliştirdiğimiz Altyapılar -->
+    <section id="systems" class="articles-section">
+        <div class="container">
+            <div class="badge-wrapper fade-in">
+                <div class="line"></div>
+                <div class="badge" data-tr="Geliştirdiğimiz Altyapılar" data-en="Architectures We Develop">Geliştirdiğimiz Altyapılar</div>
+                <div class="line"></div>
+            </div>
+            <h2 class="section-title fade-in" data-tr="Başlıca Sistemlerimiz" data-en="Our Primary Systems">Başlıca Sistemlerimiz</h2>
+
+            <div class="article-grid-v2">
+                <!-- Block 1 -->
+                <div class="article-card-v2 fade-in">
+                    <div class="card-visual-small">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C2.1 11.6 2 12.2 2 12.8V16c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <div class="card-content-v2">
+                        <h3 data-tr="Oto Kiralama KG CRM" data-en="Car Rental KG CRM">Oto Kiralama KG CRM</h3>
+                        <p data-tr="Reklamdan gelen müşterileriniz ile sisteme girdiğiniz bilgiler doğrultusunda konuşan yapay zeka sistemi." data-en="An AI system that communicates with your customers from ads based on the information you provide.">Reklamdan gelen müşterileriniz ile sisteme girdiğiniz bilgiler doğrultusunda konuşan yapay zeka sistemi.</p>
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="article-card-v2 fade-in" style="animation-delay: 0.1s;">
+                    <div class="card-visual-small">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                    </div>
+                    <div class="card-content-v2">
+                        <h3 data-tr="Sanal Kabin" data-en="Virtual Fitting Room">Sanal Kabin</h3>
+                        <p data-tr="Kullanıcıların kıyafetleri dijital deneme kabininde test etmelerine ve üzerlerinde nasıl durduğunu görebilmelerine olanak tanıyan bir sistem." data-en="A system that allows users to test clothes in a digital fitting room and see how they look on them.">Kullanıcıların kıyafetleri dijital deneme kabininde test etmelerine ve üzerlerinde nasıl durduğunu görebilmelerine olanak tanıyan bir sistem.</p>
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="article-card-v2 fade-in" style="animation-delay: 0.2s;">
+                    <div class="card-visual-small">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="system-icon"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="card-content-v2">
+                        <h3 data-tr="Finansal Asistan" data-en="Financial Assistant">Finansal Asistan</h3>
+                        <p data-tr="Sadece bir mesaj ile sürekli finansal yönetiminizi yapan bir asistan; sistem üzerinden aylık harcamalarınızı ve gelirlerinizi yönetebilmenizi sağlar." data-en="An assistant that manages your finances with just a message; allows you to manage monthly expenses and incomes through the system.">Sadece bir mesaj ile sürekli finansal yönetiminizi yapan bir asistan; sistem üzerinden aylık harcamalarınızı ve gelirlerinizi yönetebilmenizi sağlar.</p>
+                    </div>
+                </div>
+            </div>
+            
+    <!-- 5. Süreç Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="badge-wrapper fade-in">
+                <div class="line"></div>
+                <div class="badge" data-tr="İşleyişimiz" data-en="Our Process">İşleyişimiz</div>
+                <div class="line"></div>
+            </div>
+            <h2 class="section-title fade-in" data-tr="Süreç" data-en="Process">Süreç</h2>
+
+            <div class="process-grid">
+                <!-- Step 1 -->
+                <div class="process-card fade-in">
+                    <div class="step-num">01</div>
+                    <div class="process-content">
+                        <h3 data-tr="Ücretsiz Keşif ve Sistem Analizi" data-en="Free Discovery and System Analysis">Ücretsiz Keşif ve Sistem Analizi</h3>
+                        <p data-tr="Sürecimiz, işletmenizin mevcut dijital röntgenini çekmekle başlar. Görüşmelerimizde iş modelinizi dinliyor, operasyonel yüklerinizi ve zaman kaybettiğiniz noktaları tespit ediyoruz. Ardından, hangi süreçlerin (müşteri karşılama, anlık stok/araç sorgulama, randevu veya sözleşme bilgilendirmesi) yapay zeka ile tam otonom hale getirilebileceğini analiz ediyor ve size özel, ücretsiz bir teknolojik yol haritası sunuyoruz." data-en="Our process begins with taking a digital X-ray of your business. We listen to your business model, identifying operational burdens and time-consuming points. Then, we analyze which processes can be fully automated with AI and provide you with a custom, free technological roadmap.">Sürecimiz, işletmenizin mevcut dijital röntgenini çekmekle başlar. Görüşmelerimizde iş modelinizi dinliyor, operasyonel yüklerinizi ve zaman kaybettiğiniz noktaları tespit ediyoruz. Ardından, hangi süreçlerin (müşteri karşılama, anlık stok/araç sorgulama, randevu veya sözleşme bilgilendirmesi) yapay zeka ile tam otonom hale getirilebileceğini analiz ediyor ve size özel, ücretsiz bir teknolojik yol haritası sunuyoruz.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="step-num">02</div>
+                    <div class="process-content">
+                        <h3 data-tr="Mimari Tasarım ve Strateji" data-en="Architectural Design and Strategy">Mimari Tasarım ve Strateji</h3>
+                        <p data-tr="Yol haritasını onayladığınızda işin 'mutfağına' geçiyoruz. Bu aşamada, markanızın kurumsal kimliğine ve üslubuna uygun bir 'Yapay Zeka Persona'sı' (Karakteri) inşa ediyoruz. İşletme kurallarınız, fiyatlandırma politikalarınız ve kriz anı senaryolarınız detaylıca haritalandırılıyor. Sisteminizin beyni olacak veritabanı ve otomasyon akışlarının teknik mimarisi kağıt üzerinde kusursuzca tasarlanıyor." data-en="When you approve the roadmap, we move to the 'kitchen'. We build an 'AI Persona' suitable for your brand's tone. Your business rules, pricing policies, and crisis scenarios are mapped out. The technical architecture of the database and automation flows is flawlessly designed.">Yol haritasını onayladığınızda işin "mutfağına" geçiyoruz. Bu aşamada, markanızın kurumsal kimliğine ve üslubuna uygun bir "Yapay Zeka Persona'sı" (Karakteri) inşa ediyoruz. İşletme kurallarınız, fiyatlandırma politikalarınız ve kriz anı senaryolarınız detaylıca haritalandırılıyor. Sisteminizin beyni olacak veritabanı ve otomasyon akışlarının teknik mimarisi kağıt üzerinde kusursuzca tasarlanıyor.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="step-num">03</div>
+                    <div class="process-content">
+                        <h3 data-tr="Kurulum ve Senkronizasyon (14 Günlük Süreç)" data-en="Installation and Synchronization (14-Day Process)">Kurulum ve Senkronizasyon (14 Günlük Süreç)</h3>
+                        <p data-tr="Tasarlanan mimariyi koda döktüğümüz ve canlı sunuculara entegre ettiğimiz ana üretim aşamasıdır. Sisteminiz, ajansımız tarafından markanıza özel sıfırdan açılan yepyeni ve izole bir bulut altyapısında inşa edilir. Sizi karmaşık teknik kurulumlarla, şifre yönetimleriyle veya bitmek bilmeyen onay mailleriyle asla yormayız." data-en="The main production phase where we code and integrate into live servers. Your system is built on a brand new and isolated cloud infrastructure created specifically for your brand. We never tire you with complex technical setups.">Tasarlanan mimariyi koda döktüğümüz ve canlı sunuculara entegre ettiğimiz ana üretim aşamasıdır. Sisteminiz, ajansımız tarafından markanıza özel sıfırdan açılan yepyeni ve izole bir bulut altyapısında inşa edilir. Sizi karmaşık teknik kurulumlarla, şifre yönetimleriyle veya bitmek bilmeyen onay mailleriyle asla yormayız; tüm operasyon arka planda uzman ekibimiz tarafından anahtar teslim yürütülür.</p>
+                        <div class="important-note" style="margin-top: 1.5rem; padding: 1.2rem; background: rgba(59, 130, 246, 0.1); border-left: 3px solid var(--accent-primary); border-radius: 8px;">
+                            <strong data-tr="Önemli Not:" data-en="Important Note:">Önemli Not:</strong>
+                            <span data-tr="Bu 14 günlük süreçte sizden beklediğimiz tek aksiyon; sistemin resmi WhatsApp Cloud API bağlantısı yapılırken işletme hattınıza Meta (Facebook) tarafından gönderilecek olan tek seferlik SMS doğrulama kodunu ekibimize anlık olarak iletmenizdir. Bunun dışında sürecin hiçbir anında şahsi verilerinize veya müdahalenize ihtiyaç duyulmaz." data-en="The only action we expect from you is to instantly share the one-time SMS verification code sent by Meta (Facebook) to your business line while connecting to the official WhatsApp Cloud API. No personal data or intervention is needed otherwise.">Bu 14 günlük süreçte sizden beklediğimiz tek aksiyon; sistemin resmi WhatsApp Cloud API bağlantısı yapılırken işletme hattınıza Meta (Facebook) tarafından gönderilecek olan tek seferlik SMS doğrulama kodunu ekibimize anlık olarak iletmenizdir. Bunun dışında sürecin hiçbir anında şahsi verilerinize veya müdahalenize ihtiyaç duyulmaz.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="step-num">04</div>
+                    <div class="process-content">
+                        <h3 data-tr="Stres Testi, Kalite Kontrol ve Anahtar Teslim" data-en="Stress Test, Quality Control and Turnkey Delivery">Stres Testi, Kalite Kontrol ve Anahtar Teslim</h3>
+                        <p data-tr="Sistem müşterilerinize açılmadan önce, oluşturulan yapay zeka ajanı tarafımızca en zorlu senaryolarla (stres testi) sınanır. Israrcı pazarlıklar, sistem dışı sorular ve karmaşık müşteri talepleri simüle edilerek sistemin hata payı sıfıra indirilir. Sistem kusursuz bir şekilde otonom çalışmaya başladığında; oluşturulan tüm altyapının, veritabanının ve özel hesapların 'dijital anahtarları' size teslim edilir." data-en="Before opening to customers, the AI agent is tested with the toughest scenarios. Persistent negotiations and complex requests are simulated to reduce the error margin to zero. When it works flawlessly, the 'digital keys' to all infrastructure are delivered to you.">Sistem müşterilerinize açılmadan önce, oluşturulan yapay zeka ajanı tarafımızca en zorlu senaryolarla (stres testi) sınanır. Israrcı pazarlıklar, sistem dışı sorular ve karmaşık müşteri talepleri simüle edilerek sistemin hata payı sıfıra indirilir. Sistem kusursuz bir şekilde otonom çalışmaya başladığında; oluşturulan tüm altyapının, veritabanının ve özel hesapların "dijital anahtarları" size teslim edilir. Artık operasyonunuz 7/24 uyumayan, profesyonel bir yapay zekaya emanettir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Ücretsiz Sistem Analizi -->
+    <section class="analysis-section">
+        <div class="container">
+            <div class="analysis-box fade-in">
+                <h2 data-tr="Ücretsiz Sistem Analizi" data-en="Free System Analysis">Ücretsiz Sistem Analizi</h2>
+                <p data-tr="İşletmenizin hangi süreçlerinin otomatikleşebileceğini ve size ne kadar kazanç sağlayacağını ücretsiz olarak analiz ediyoruz. Süreçlerinizi inceleyelim." data-en="We analyze for free which processes of your business can be automated and how much gain it will provide. Let's examine your processes.">İşletmenizin hangi süreçlerinin otomatikleşebileceğini ve size ne kadar kazanç sağlayacağını ücretsiz olarak analiz ediyoruz. Süreçlerinizi inceleyelim.</p>
+                <a href="https://wa.me/905411869513" target="_blank" class="btn-primary-v2" data-tr="Analiz Talebi Oluştur" data-en="Create Analysis Request">Analiz Talebi Oluştur</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer id="contact-info" class="footer-detailed">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-area">
+                        <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                        <span class="brand-name">KZ Systems</span>
+                    </div>
+                    <p class="brand-desc" data-tr="İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz." data-en="Connecting businesses with the autonomous technology of the future.">İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-tr="İletişim Bilgileri" data-en="Contact Information">İletişim Bilgileri</h4>
+                    <ul>
+                        <li><span class="icon">📞</span> <span data-tr="Telefon: 0541 186 95 13" data-en="Phone: +90 541 186 95 13">Telefon: 0541 186 95 13</span></li>
+                        <li><span class="icon">✉️</span> <span data-tr="E-posta: kagulle31@gmail.com" data-en="Email: kagulle31@gmail.com">E-posta: kagulle31@gmail.com</span></li>
+                        <li><span class="icon">📱</span> <a href="https://wa.me/905411869513" target="_blank" data-tr="WhatsApp Destek Hattı" data-en="WhatsApp Support Line">WhatsApp Destek Hattı</a></li>
+                        <li><span class="icon">📍</span> <span data-tr="Adres: Kocaeli / Darıca" data-en="Address: Kocaeli / Darıca">Adres: Kocaeli / Darıca</span></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-tr="Hızlı Linkler" data-en="Quick Links">Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                        <li><a href="#systems" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                        <li><a href="#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-tr="© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle." data-en="© 2026 KZ Systems. All Rights Reserved. | With the assurance of transparent, invoiced and legal commercial infrastructure.">© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

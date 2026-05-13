@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oto Kiralama KG CRM | KZ Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .screenshot-section { margin-top: 6rem; }
+        .screenshot-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; }
+        .screenshot-column h3 { font-size: 1.8rem; margin-bottom: 2rem; color: #fff; border-left: 4px solid var(--accent-primary); padding-left: 1rem; }
+        .screenshot-list { display: flex; flex-direction: column; gap: 2rem; }
+        .screenshot-item { background: rgba(255,255,255,0.03); border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); overflow: hidden; }
+        .screenshot-item img { width: 100%; height: auto; display: block; }
+        .screenshot-note { margin: 1.5rem 0 3rem 0; color: var(--text-secondary); font-style: italic; font-size: 1rem; opacity: 0.9; }
+        @media (max-width: 992px) { .screenshot-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="bg-system"><div class="glow-horizontal"></div><div class="noise-overlay"></div></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-area">
+                    <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                    <span class="brand-name">KZ Systems</span>
+                </div>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                    <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                    <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                    <li><a href="index.html#about" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <a href="#contact-info" class="btn-contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+                    <div class="lang-switcher">
+                        <button id="lang-btn">TR</button>
+                        <div class="lang-dropdown">
+                            <a href="#" onclick="changeLang('tr')">Türkçe</a>
+                            <a href="#" onclick="changeLang('en')">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="system-detail">
+        <div class="container">
+            <div style="margin-bottom: 3rem;">
+                <a href="systems.html" class="back-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #fff; text-decoration: none; background: rgba(255,255,255,0.05); padding: 0.6rem 1.2rem; border-radius: 100px; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    <span data-tr="Geri Dön" data-en="Back">Geri Dön</span>
+                </a>
+            </div>
+
+            <div class="badge-wrapper fade-in visible">
+                <div class="line"></div>
+                <div class="badge" data-tr="Detaylı İnceleme" data-en="Detailed Review">Detaylı İnceleme</div>
+                <div class="line"></div>
+            </div>
+            <h1 class="section-title fade-in visible" data-tr="Oto Kiralama KG CRM" data-en="Oto Kiralama KG CRM">Oto Kiralama KG CRM</h1>
+            
+            <div class="detail-box fade-in visible">
+                <div class="detail-header">
+                    <h2 data-tr="Sistem Detayları" data-en="System Details">Sistem Detayları</h2>
+                    <p data-tr="Sisteme güncel araçlarınız hakkında bilgiler girilir. Sistem, müşteriden aldığı mesajlar ile analiz yaparak müşterilerle konuşur. Müşteri kabul ettiği takdirde, sistemi potansiyel müşteri olarak etiketler. Müsait bir vaktinizde sisteme girerek potansiyel olan ve olmayan tüm müşterileri detaylı bir şekilde görebilirsiniz." data-en="Sisteme güncel araçlarınız hakkında bilgiler girilir. Sistem, müşteriden aldığı mesajlar ile analiz yaparak müşterilerle konuşur. Müşteri kabul ettiği takdirde, sistemi potansiyel müşteri olarak etiketler. Müsait bir vaktinizde sisteme girerek potansiyel olan ve olmayan tüm müşterileri detaylı bir şekilde görebilirsiniz.">Sisteme güncel araçlarınız hakkında bilgiler girilir. Sistem, müşteriden aldığı mesajlar ile analiz yaparak müşterilerle konuşur. Müşteri kabul ettiği takdirde, sistemi potansiyel müşteri olarak etiketler. Müsait bir vaktinizde sisteme girerek potansiyel olan ve olmayan tüm müşterileri detaylı bir şekilde görebilirsiniz.</p>
+                </div>
+                
+                <!-- Screenshots Section -->
+                <div class="screenshot-section">
+                    <h2 class="section-title" data-tr="Sistem Örnek Resimleri" data-en="System Example Images" style="text-align: left; margin-bottom: 1rem;">Sistem Örnek Resimleri</h2>
+                    <p class="screenshot-note" data-tr="Not: İçerideki bilgilerin hepsi prototip yazıları ve mesajlarıdır, bir gerçeklik taşımaz." data-en="Note: All information inside are prototype texts and messages, they do not carry any reality.">Not: İçerideki bilgilerin hepsi prototip yazıları ve mesajlarıdır, bir gerçeklik taşımaz.</p>
+                    
+                    <div class="screenshot-grid">
+                        <div class="screenshot-column">
+                            <h3 data-tr="Masaüstü" data-en="Desktop">Masaüstü</h3>
+                            <div class="screenshot-list">
+                                <div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot1.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot2.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot3.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot4.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot5.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot6.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot7.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot8.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot9.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot10.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot11.png" alt=""></div>
+<div class="screenshot-item"><img src="assets/systems/oto-kiralama/screenshots/screenshot12.png" alt=""></div>
+
+                            </div>
+                        </div>
+                        <div class="screenshot-column">
+                            <h3 data-tr="Telefon" data-en="Phone">Telefon</h3>
+                            <div class="screenshot-list">
+                                <div class="screenshot-item" style="max-width: 280px; margin: 0 auto;"><img src="assets/systems/oto-kiralama/screenshots/phone1.png" alt=""></div>
+<div class="screenshot-item" style="max-width: 280px; margin: 0 auto;"><img src="assets/systems/oto-kiralama/screenshots/phone2.png" alt=""></div>
+<div class="screenshot-item" style="max-width: 280px; margin: 0 auto;"><img src="assets/systems/oto-kiralama/screenshots/phone3.png" alt=""></div>
+<div class="screenshot-item" style="max-width: 280px; margin: 0 auto;"><img src="assets/systems/oto-kiralama/screenshots/phone4.png" alt=""></div>
+<div class="screenshot-item" style="max-width: 280px; margin: 0 auto;"><img src="assets/systems/oto-kiralama/screenshots/phone5.png" alt=""></div>
+<div class="screenshot-item" style="max-width: 280px; margin: 0 auto;"><img src="assets/systems/oto-kiralama/screenshots/phone6.png" alt=""></div>
+<div class="screenshot-item" style="max-width: 280px; margin: 0 auto;"><img src="assets/systems/oto-kiralama/screenshots/phone7.png" alt=""></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-footer" style="text-align: center; margin-top: 6rem;">
+                    <a href="https://wa.me/905411869513" target="_blank" class="btn-primary-v2" data-tr="Daha detaylı bilgi için iletişime geç" data-en="Contact for more detailed information">Daha detaylı bilgi için iletişime geç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact-info" class="footer-detailed">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-area">
+                        <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                        <span class="brand-name">KZ Systems</span>
+                    </div>
+                    <p class="brand-desc" data-tr="İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz." data-en="Connecting businesses with the autonomous technology of the future.">İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-tr="İletişim Bilgileri" data-en="Contact Information">İletişim Bilgileri</h4>
+                    <ul>
+                        <li><span class="icon">📞</span> <span data-tr="Telefon: 0541 186 95 13" data-en="Phone: +90 541 186 95 13">Telefon: 0541 186 95 13</span></li>
+                        <li><span class="icon">✉️</span> <span data-tr="E-posta: kagulle31@gmail.com" data-en="Email: kagulle31@gmail.com">E-posta: kagulle31@gmail.com</span></li>
+                        <li><span class="icon">📱</span> <a href="https://wa.me/905411869513" target="_blank" data-tr="WhatsApp Destek Hattı" data-en="WhatsApp Support Line">WhatsApp Destek Hattı</a></li>
+                        <li><span class="icon">📍</span> <span data-tr="Adres: Kocaeli / Darıca" data-en="Address: Kocaeli / Darıca">Adres: Kocaeli / Darıca</span></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-tr="Hızlı Linkler" data-en="Quick Links">Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                        <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                        <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                        <li><a href="index.html#about" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-tr="© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle." data-en="© 2026 KZ Systems. All Rights Reserved. | With the assurance of transparent, invoiced and legal commercial infrastructure.">© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
