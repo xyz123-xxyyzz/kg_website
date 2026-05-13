@@ -1041,20 +1041,25 @@ section, footer, nav {
 .long-system-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 32px;
-    padding: 3rem;
-    margin-bottom: 2rem;
+    border-radius: 40px;
+    padding: 4rem 3rem;
+    margin-bottom: 3rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    text-align: center;
+    gap: 2rem;
     transition: var(--transition);
     backdrop-filter: blur(20px);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .long-system-card:hover {
     background: rgba(255, 255, 255, 0.06);
     border-color: rgba(255, 255, 255, 0.2);
-    transform: translateX(10px);
+    transform: translateY(-10px);
 }
 
 .long-card-icon {
@@ -1080,9 +1085,9 @@ section, footer, nav {
 
 /* Plus Button for Systems Page */
 .plus-btn {
-    margin-left: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
