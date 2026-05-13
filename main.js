@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileToggle.classList.remove('active');
-            mobileOverlay.classList.toggle('active');
+            mobileOverlay.classList.remove('active');
             document.body.style.overflow = '';
         });
     });

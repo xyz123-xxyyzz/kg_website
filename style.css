@@ -750,6 +750,11 @@ p {
     font-size: 0.95rem;
     border: 2px solid #000;
     transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-align: center;
 }
 
 .btn-secondary-v2:hover {
@@ -896,6 +901,8 @@ section, footer, nav {
         padding: 2rem 1rem !important;
         width: 100% !important;
         text-align: center !important;
+        border-radius: 32px !important;
+        overflow: hidden !important;
     }
 
     .process-content h3 {
@@ -914,6 +921,8 @@ section, footer, nav {
     .analysis-box {
         padding: 2.5rem 1rem !important;
         width: 100% !important;
+        border-radius: 40px !important;
+        overflow: hidden !important;
     }
 
     .analysis-box h2 {
@@ -928,9 +937,13 @@ section, footer, nav {
     /* Footer Full Width Fix */
     .footer-detailed {
         padding: 4rem 0 2rem !important;
-        width: 100% !important;
+        width: 100vw !important;
+        position: relative !important;
+        left: 50% !important;
+        right: 50% !important;
+        margin-left: -50vw !important;
+        margin-right: -50vw !important;
         background: #010205 !important;
-        margin: 0 !important;
     }
 
     .footer-grid {
@@ -954,6 +967,8 @@ section, footer, nav {
         text-align: center !important;
         padding: 2rem 1.2rem !important;
         gap: 1.5rem !important;
+        border-radius: 24px !important;
+        overflow: hidden !important;
     }
 
     .long-card-icon {
@@ -967,8 +982,9 @@ section, footer, nav {
     }
 
     .detail-box {
-        padding: 2.5rem 1.2rem !important;
-        border-radius: 20px !important;
+        padding: 2.5rem 1rem !important;
+        border-radius: 32px !important;
+        overflow: hidden !important;
     }
 
     .detail-footer {
@@ -976,11 +992,14 @@ section, footer, nav {
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
+        align-items: center !important;
     }
 
     .detail-footer .btn-primary-v2 {
         width: 100% !important;
+        max-width: 90% !important;
         min-width: unset !important;
+        margin: 0 auto !important;
     }
 
     .navbar {
