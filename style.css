@@ -869,18 +869,20 @@ p {
     text-decoration: none;
 }
 
+/* CSS Version: 1.2 - Mobile Fixes Applied */
+
 html, body {
     overflow-x: hidden !important;
     width: 100% !important;
     position: relative !important;
     margin: 0 !important;
     padding: 0 !important;
+    background-color: #030409 !important;
 }
 
 section, footer, nav {
     width: 100% !important;
     margin: 0 !important;
-    padding: 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -888,52 +890,62 @@ section, footer, nav {
         display: flex;
     }
     
-    h1 { font-size: 1.8rem !important; line-height: 1.2 !important; }
-    h2.section-title { font-size: 1.6rem !important; text-align: center !important; }
+    h1 { font-size: 1.8rem !important; line-height: 1.2 !important; margin-bottom: 1.5rem !important; }
+    h2.section-title { font-size: 1.6rem !important; text-align: center !important; width: 100% !important; }
     .nav-links, .desktop-only { display: none; }
-    .hero-saas { padding: 6rem 0 4rem !important; min-height: unset !important; overflow: visible !important; }
-    .hero-btns { flex-direction: column !important; gap: 1.2rem !important; width: 100% !important; margin-top: 2rem !important; overflow: visible !important; }
+    
+    .hero-saas { 
+        padding: 80px 0 100px !important; 
+        min-height: auto !important; 
+        height: auto !important;
+        overflow: visible !important; 
+    }
+    
+    .hero-btns { 
+        display: flex !important;
+        flex-direction: column !important; 
+        gap: 20px !important; 
+        width: 100% !important; 
+        margin-top: 30px !important; 
+        overflow: visible !important;
+        padding-bottom: 20px !important;
+    }
     
     .container {
-        padding: 0 1.2rem !important;
+        padding: 0 1.5rem !important;
         width: 100% !important;
         max-width: 100% !important;
     }
 
     /* Process Card Fixes */
     .process-card {
-        padding: 2.5rem 1.2rem !important;
+        padding: 2.5rem 1.5rem !important;
         width: 100% !important;
         text-align: center !important;
         border-radius: 40px !important;
         overflow: hidden !important;
-        margin-bottom: 1.5rem !important;
-    }
-
-    .process-content h3 {
-        font-size: 1.3rem !important;
-        line-height: 1.3 !important;
+        margin-bottom: 2rem !important;
     }
 
     /* Analysis Box Fixes */
     .analysis-box {
-        padding: 3rem 1.2rem !important;
+        padding: 3rem 1.5rem !important;
         width: 100% !important;
         border-radius: 40px !important;
         overflow: hidden !important;
+        margin: 2rem 0 !important;
     }
 
-    .analysis-box h2 {
-        font-size: 1.5rem !important;
-    }
-
-    /* Footer Full Width Fix - Aggressive */
+    /* Footer Full Width Fix - Bulletproof */
     .footer-detailed {
-        padding: 5rem 0 3rem !important;
-        width: 100% !important;
+        padding: 60px 0 !important;
+        width: 100vw !important;
         background: #000 !important;
-        margin: 0 !important;
+        margin-left: calc(-50vw + 50%) !important;
+        margin-right: calc(-50vw + 50%) !important;
         display: block !important;
+        position: relative !important;
+        left: 0 !important;
     }
 
     .footer-grid {
@@ -941,28 +953,20 @@ section, footer, nav {
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        gap: 3rem !important;
+        gap: 40px !important;
         width: 100% !important;
     }
 
-    .long-system-card {
-        flex-direction: column !important;
-        text-align: center !important;
-        padding: 2rem 1.2rem !important;
-        gap: 1.5rem !important;
-        border-radius: 32px !important;
-    }
-
-    .detail-box {
-        padding: 2.5rem 1rem !important;
-        border-radius: 32px !important;
+    .footer-brand, .footer-contact, .footer-links {
+        width: 100% !important;
     }
 
     .detail-footer {
-        margin-top: 3rem !important;
+        margin-top: 40px !important;
         display: flex !important;
         justify-content: center !important;
         width: 100% !important;
+        padding-bottom: 40px !important;
     }
 
     .detail-footer .btn-primary-v2 {
