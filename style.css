@@ -873,11 +873,14 @@ html, body {
     overflow-x: hidden !important;
     width: 100% !important;
     position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 section, footer, nav {
     width: 100% !important;
-    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -888,21 +891,23 @@ section, footer, nav {
     h1 { font-size: 1.8rem !important; line-height: 1.2 !important; }
     h2.section-title { font-size: 1.6rem !important; text-align: center !important; }
     .nav-links, .desktop-only { display: none; }
-    .hero-saas { padding: 4rem 0 2rem !important; }
+    .hero-saas { padding: 6rem 0 4rem !important; min-height: unset !important; overflow: visible !important; }
+    .hero-btns { flex-direction: column !important; gap: 1.2rem !important; width: 100% !important; margin-top: 2rem !important; overflow: visible !important; }
     
     .container {
-        padding: 0 1rem !important;
+        padding: 0 1.2rem !important;
         width: 100% !important;
         max-width: 100% !important;
     }
 
     /* Process Card Fixes */
     .process-card {
-        padding: 2rem 1rem !important;
+        padding: 2.5rem 1.2rem !important;
         width: 100% !important;
         text-align: center !important;
-        border-radius: 32px !important;
+        border-radius: 40px !important;
         overflow: hidden !important;
+        margin-bottom: 1.5rem !important;
     }
 
     .process-content h3 {
@@ -910,16 +915,9 @@ section, footer, nav {
         line-height: 1.3 !important;
     }
 
-    .step-num {
-        font-size: 2rem !important;
-        top: 0.5rem !important;
-        right: 1rem !important;
-        opacity: 0.1 !important;
-    }
-
     /* Analysis Box Fixes */
     .analysis-box {
-        padding: 2.5rem 1rem !important;
+        padding: 3rem 1.2rem !important;
         width: 100% !important;
         border-radius: 40px !important;
         overflow: hidden !important;
@@ -927,23 +925,15 @@ section, footer, nav {
 
     .analysis-box h2 {
         font-size: 1.5rem !important;
-        line-height: 1.2 !important;
     }
 
-    .analysis-box p {
-        font-size: 0.9rem !important;
-    }
-
-    /* Footer Full Width Fix */
+    /* Footer Full Width Fix - Aggressive */
     .footer-detailed {
-        padding: 4rem 0 2rem !important;
-        width: 100vw !important;
-        position: relative !important;
-        left: 50% !important;
-        right: 50% !important;
-        margin-left: -50vw !important;
-        margin-right: -50vw !important;
-        background: #010205 !important;
+        padding: 5rem 0 3rem !important;
+        width: 100% !important;
+        background: #000 !important;
+        margin: 0 !important;
+        display: block !important;
     }
 
     .footer-grid {
@@ -951,15 +941,8 @@ section, footer, nav {
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        gap: 2.5rem !important;
-    }
-
-    .footer-brand .logo-area {
-        justify-content: center !important;
-    }
-
-    .footer-contact ul li {
-        justify-content: center !important;
+        gap: 3rem !important;
+        width: 100% !important;
     }
 
     .long-system-card {
@@ -967,40 +950,26 @@ section, footer, nav {
         text-align: center !important;
         padding: 2rem 1.2rem !important;
         gap: 1.5rem !important;
-        border-radius: 24px !important;
-        overflow: hidden !important;
-    }
-
-    .long-card-icon {
-        margin: 0 auto !important;
-    }
-
-    .plus-btn {
-        margin: 1.5rem auto 0 !important;
-        width: 100% !important;
-        justify-content: center !important;
+        border-radius: 32px !important;
     }
 
     .detail-box {
         padding: 2.5rem 1rem !important;
         border-radius: 32px !important;
-        overflow: hidden !important;
     }
 
     .detail-footer {
         margin-top: 3rem !important;
-        width: 100% !important;
         display: flex !important;
         justify-content: center !important;
-        align-items: center !important;
+        width: 100% !important;
     }
 
     .detail-footer .btn-primary-v2 {
         width: 100% !important;
-        max-width: 90% !important;
-        min-width: unset !important;
         margin: 0 auto !important;
     }
+}
 
     .navbar {
         position: fixed;
