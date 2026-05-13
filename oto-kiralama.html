@@ -36,12 +36,11 @@
                     <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
                     <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
                     <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
-                    <li><a href="index.html#about" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a></li>
                 </ul>
             </div>
             <div class="nav-right">
                 <div class="nav-actions">
-                    <a href="#contact-info" class="btn-contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+                    <a href="#contact-info" class="btn-contact desktop-only" data-tr="İletişim" data-en="Contact">İletişim</a>
                     <div class="lang-switcher">
                         <button id="lang-btn">TR</button>
                         <div class="lang-dropdown">
@@ -49,10 +48,28 @@
                             <a href="#" onclick="changeLang('en')">English</a>
                         </div>
                     </div>
+                    <!-- Hamburger Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                <li><a href="#contact-info" class="btn-contact-mobile" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
 
     <section class="system-detail">
         <div class="container">
@@ -149,7 +166,6 @@
                         <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
                         <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
                         <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
-                        <li><a href="index.html#about" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a></li>
                     </ul>
                 </div>
             </div>

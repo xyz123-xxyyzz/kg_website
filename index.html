@@ -35,7 +35,7 @@
             </div>
             <div class="nav-right">
                 <div class="nav-actions">
-                    <a href="#contact-info" class="btn-contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+                    <a href="#contact-info" class="btn-contact desktop-only" data-tr="İletişim" data-en="Contact">İletişim</a>
                     <div class="lang-switcher">
                         <button id="lang-btn">TR</button>
                         <div class="lang-dropdown">
@@ -43,10 +43,28 @@
                             <a href="#" onclick="changeLang('en')">English</a>
                         </div>
                     </div>
+                    <!-- Hamburger Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                <li><a href="systems.html" target="_blank" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                <li><a href="#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                <li><a href="#contact-info" class="btn-contact-mobile" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- 1. Hero Section -->
     <section id="home" class="hero-saas">
@@ -134,6 +152,10 @@
                         <p data-tr="Sadece bir mesaj ile sürekli finansal yönetiminizi yapan bir asistan; sistem üzerinden aylık harcamalarınızı ve gelirlerinizi yönetebilmenizi sağlar." data-en="An assistant that manages your finances with just a message; allows you to manage monthly expenses and incomes through the system.">Sadece bir mesaj ile sürekli finansal yönetiminizi yapan bir asistan; sistem üzerinden aylık harcamalarınızı ve gelirlerinizi yönetebilmenizi sağlar.</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="systems-more fade-in" style="text-align: center; margin-top: 4rem;">
+                <a href="systems.html" class="btn-secondary-v2" data-tr="Diğer Sistemlerimizi İnceleyin" data-en="Explore Our Other Systems">Diğer Sistemlerimizi İnceleyin</a>
             </div>
             
     <!-- 5. Süreç Section -->
