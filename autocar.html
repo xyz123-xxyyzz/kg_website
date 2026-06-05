@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCAR Yapay Zeka Oto Ekspertiz | KZ Systems</title>
+    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .screenshot-section { margin-top: 6rem; }
+        .video-container { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden; 
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(0,0,0,0.5);
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .placeholder-text {
+            position: absolute;
+            color: rgba(255,255,255,0.5);
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 2rem;
+        }
+        .notes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+        .note-card { background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); }
+        .note-card h3 { color: var(--accent-primary); margin-bottom: 1rem; }
+        @media (max-width: 768px) { .notes-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="bg-system"><div class="glow-horizontal"></div><div class="noise-overlay"></div></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-area">
+                    <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                    <span class="brand-name">KZ Systems</span>
+                </div>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                    <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                    <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-actions">
+                    <a href="#contact-info" class="btn-contact desktop-only" data-tr="İletişim" data-en="Contact">İletişim</a>
+                    <div class="lang-switcher">
+                        <button id="lang-btn">TR</button>
+                        <div class="lang-dropdown">
+                            <a href="#" onclick="changeLang('tr')">Türkçe</a>
+                            <a href="#" onclick="changeLang('en')">English</a>
+                        </div>
+                    </div>
+                    <!-- Hamburger Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                <li><a href="#contact-info" class="btn-contact-mobile" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="system-detail">
+        <div class="container">
+            <div style="margin-bottom: 3rem;">
+                <a href="systems.html" class="back-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #fff; text-decoration: none; background: rgba(255,255,255,0.05); padding: 0.6rem 1.2rem; border-radius: 100px; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    <span data-tr="Geri Dön" data-en="Back">Geri Dön</span>
+                </a>
+            </div>
+
+            <div class="badge-wrapper fade-in visible">
+                <div class="line"></div>
+                <div class="badge" data-tr="Detaylı İnceleme" data-en="Detailed Review">Detaylı İnceleme</div>
+                <div class="line"></div>
+            </div>
+            <h1 class="section-title fade-in visible" data-tr="AutoCAR Yapay Zeka Oto Ekspertiz" data-en="AutoCAR AI Auto Appraiser">AutoCAR Yapay Zeka Oto Ekspertiz</h1>
+            
+            <div class="detail-box fade-in visible">
+                <div class="detail-header">
+                    <h2 data-tr="Sistem Detayları ve Süreç" data-en="System Details and Process">Sistem Detayları ve Süreç</h2>
+                    <p data-tr="AutoCAR, araç alım satım sürecinizi tamamen hızlandıran yenilikçi bir tarayıcı eklentisidir. Herhangi bir ilan sitesinde (örneğin sahibinden.com) gezinirken beğendiğiniz araçları tek tıkla eklenti havuzunuza alırsınız. Sistem, ilan detaylarını (fiyat, motor gücü, kondisyon vb.) sadece 5 saniye içinde yapay zeka ile analiz ederek pazar değerini ve satılma hızını (likidite) hesaplar. Böylece en doğru ve kârlı yatırımı bulmanızı sağlar." data-en="AutoCAR is an innovative browser extension that speeds up your car buying/selling process. While browsing a listing site, you can add cars to your pool with a single click. The system analyzes the listing details with AI in 5 seconds and calculates its market value and liquidity.">AutoCAR, araç alım satım sürecinizi tamamen hızlandıran yenilikçi bir tarayıcı eklentisidir. Herhangi bir ilan sitesinde (örneğin sahibinden.com) gezinirken beğendiğiniz araçları tek tıkla eklenti havuzunuza alırsınız. Sistem, ilan detaylarını (fiyat, motor gücü, kondisyon vb.) sadece 5 saniye içinde yapay zeka ile analiz ederek pazar değerini ve satılma hızını (likidite) hesaplar. Böylece en doğru ve kârlı yatırımı bulmanızı sağlar.</p>
+                </div>
+                
+                <div class="notes-grid">
+                    <div class="note-card">
+                        <h3 data-tr="Nasıl İşliyor?" data-en="How It Works?">Nasıl İşliyor?</h3>
+                        <ol style="color: var(--text-secondary); line-height: 1.8; margin-left: 1rem;">
+                            <li data-tr="Tarayıcınıza size özel oluşturduğumuz eklentiyi kurun." data-en="Install the custom extension to your browser.">Tarayıcınıza size özel oluşturduğumuz eklentiyi kurun.</li>
+                            <li data-tr="İlan sitelerinde dolaşırken 'Analiz Et' butonuna basarak aracı havuza atın." data-en="Click 'Analyze' while browsing listings to add the car to your pool.">İlan sitelerinde dolaşırken "Analiz Et" butonuna basarak aracı havuza atın.</li>
+                            <li data-tr="Kullanıcı panelinize girip yapay zekanın çıkarttığı matematiksel fiyat/performans raporunu inceleyin." data-en="Go to your dashboard and review the mathematical price/performance report generated by AI.">Kullanıcı panelinize girip yapay zekanın çıkarttığı matematiksel fiyat/performans raporunu inceleyin.</li>
+                        </ol>
+                    </div>
+                    <div class="note-card">
+                        <h3 data-tr="Önemli Notlar" data-en="Important Notes">Önemli Notlar</h3>
+                        <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1rem;">
+                            <li data-tr="Sistem sadece veriye dayalı rasyonel analiz yapar, duygusal kararları önler." data-en="The system performs data-driven rational analysis, preventing emotional decisions.">Sistem sadece veriye dayalı rasyonel analiz yapar, duygusal kararları önler.</li>
+                            <li data-tr="Büyük veri kullanımı sayesinde piyasa şartlarına göre en mantıklı yatırımı anında tespit edersiniz." data-en="Using big data, you can instantly detect the most logical investment.">Büyük veri kullanımı sayesinde piyasa şartlarına göre en mantıklı yatırımı anında tespit edersiniz.</li>
+                            <li data-tr="Güvenlik için API anahtarlarınız veritabanında size özel olarak şifrelenir." data-en="For security, your API keys are encrypted specially for you in the database.">Güvenlik için API anahtarlarınız veritabanında size özel olarak şifrelenir.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Screenshots Section -->
+                <div class="screenshot-section">
+                    <h2 class="section-title" data-tr="Sistem Tanıtım Videosu" data-en="System Showcase Video" style="text-align: left; margin-bottom: 1rem;">Sistem Tanıtım Videosu</h2>
+                    <p class="screenshot-note" data-tr="Not: Aşağıdaki videoda sistemin 5 saniyede nasıl analiz yaptığını ve çalıştığını adım adım görebilirsiniz." data-en="Note: In the video below, you can see step-by-step how the system analyzes in 5 seconds.">Not: Aşağıdaki videoda sistemin 5 saniyede nasıl analiz yaptığını ve çalıştığını adım adım görebilirsiniz.</p>
+                    
+                    <div class="video-container">
+                        <!-- Video embed kodu buraya eklenecek -->
+                        <div class="placeholder-text">
+                            [ Hazırlanacak Video Buraya Eklenecek ]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-footer" style="margin-top: 4rem;">
+                    <a href="https://auto-car-gold.vercel.app" target="_blank" class="btn-primary-v2" data-tr="Sisteme Git" data-en="Go to System" style="margin-right: 1rem;">Sisteme Git</a>
+                    <a href="https://wa.me/905411869513" target="_blank" class="btn-secondary-v2" data-tr="Daha detaylı bilgi için iletişime geç" data-en="Contact for more detailed information">Daha detaylı bilgi için iletişime geç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact-info" class="footer-detailed">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-area">
+                        <img src="logo.png" alt="KZ Logo" class="brand-logo">
+                        <span class="brand-name">KZ Systems</span>
+                    </div>
+                    <p class="brand-desc" data-tr="İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz." data-en="Connecting businesses with the autonomous technology of the future.">İşletmeleri geleceğin otonom teknolojisiyle buluşturuyoruz.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-tr="İletişim Bilgileri" data-en="Contact Information">İletişim Bilgileri</h4>
+                    <ul>
+                        <li><span class="icon">📞</span> <span data-tr="Telefon: 0541 186 95 13" data-en="Phone: +90 541 186 95 13">Telefon: 0541 186 95 13</span></li>
+                        <li><span class="icon">✉️</span> <span data-tr="E-posta: kagulle31@gmail.com" data-en="Email: kagulle31@gmail.com">E-posta: kagulle31@gmail.com</span></li>
+                        <li><span class="icon">📱</span> <a href="https://wa.me/905411869513" target="_blank" data-tr="WhatsApp Destek Hattı" data-en="WhatsApp Support Line">WhatsApp Destek Hattı</a></li>
+                        <li><span class="icon">📍</span> <span data-tr="Adres: Kocaeli / Darıca" data-en="Address: Kocaeli / Darıca">Adres: Kocaeli / Darıca</span></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-tr="Hızlı Linkler" data-en="Quick Links">Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                        <li><a href="systems.html" data-tr="Sistemlerimiz" data-en="Our Systems">Sistemlerimiz</a></li>
+                        <li><a href="index.html#process" data-tr="Süreç" data-en="Process">Süreç</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-tr="© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle." data-en="© 2026 KZ Systems. All Rights Reserved. | With the assurance of transparent, invoiced and legal commercial infrastructure.">© 2026 KZ Systems. Tüm Hakları Saklıdır. | Şeffaf, faturalı ve yasal ticari altyapı güvencesiyle.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
